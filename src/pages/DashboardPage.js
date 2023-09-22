@@ -1,5 +1,5 @@
 import React from 'react';
-import ChartService from '../services/ChartService';
+import { Link as RouterLink } from 'react-router-dom';
 import '../styling/DashboardPage.css';
 import { Container, Box, Typography, Button, Link, TextField } from '@mui/material';
 import { AppBar, Toolbar, Grid, Paper } from '@mui/material';
@@ -25,6 +25,7 @@ import NotificationsIcon from '@mui/icons-material/Notifications';
 import EmailIcon from '@mui/icons-material/Email';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import SearchIcon from '@mui/icons-material/Search';
+import WorkIcon from '@mui/icons-material/Work';
 
 
 function DashboardPage() {
@@ -143,6 +144,11 @@ function DashboardPage() {
             </IconButton>
             <IconButton color="inherit">
               <Badge badgeContent={0} color="secondary">
+                <WorkIcon />
+              </Badge>
+            </IconButton>
+            <IconButton color="inherit">
+              <Badge badgeContent={0} color="secondary">
                 <AccountCircleIcon />
               </Badge>
             </IconButton>
@@ -157,7 +163,12 @@ function DashboardPage() {
               px: [1],
             }}
           >
-            <img src={pinnacleplus} alt="Pinnacle Plus Logo" width="150" height="100" />
+            <Link 
+            component={RouterLink}
+            to = '/'>
+                <img src={pinnacleplus} alt="Pinnacle Plus Logo" width="150" height="100" />
+            </Link>
+            
             <IconButton onClick={toggleDrawer}>
               <ChevronLeftIcon />
             </IconButton>

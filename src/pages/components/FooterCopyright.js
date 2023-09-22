@@ -15,6 +15,16 @@ export default function FooterCopyright() {
           KPMG
         </Link>{'. '}
         <br/><br/>
+        <Link color="inherit" href="https://kpmg.com/us/en/home/misc/legal.html">
+          TOS
+        </Link>{' | '}
+        <Link color="inherit" href="https://kpmg.com/us/en/home/misc/privacy.html">
+          Privacy Policy
+        </Link>{' | '}
+        <Link color="inherit" href="https://kpmg.com/us/en/home/misc/accessibility.html">
+          Accessibility
+        </Link>
+        <br/><br/>
       </Typography>
     );
 }
