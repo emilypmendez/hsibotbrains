@@ -38,19 +38,20 @@ const HomePage = () => {
             borderRadius: '16px', // Add a border radius for a card-like appearance
           }}
         >
-          <Typography variant="h4" color="primary" gutterBottom>
-            Welcome to the #1 AI Job Search Tool
-          </Typography>
           <Typography variant="h1" fontWeight="bold" mb={3} textAlign="center">
-            One Platform for All Your <br/> Job Search Needs
+            Welcome To Pinnacle Plus
           </Typography>
+          <Typography variant="h4" color="primary" gutterBottom>
+            A premium health equity for all
+          </Typography>
+          
           <Link
             component={RouterLink}
             to="/"
             underline="none"
           >
             <Button variant="contained" size="large" >
-              I'm Ready To Search
+              Get Started
             </Button>
           </Link>
         </Container>
@@ -59,7 +60,7 @@ const HomePage = () => {
 
       {/* PARTNER INSTITUTIONS */}
        <Box 
-        bgcolor="#007954" // Set the background color here // #007954
+        bgcolor="#003087" // Set the background color here // #007954
         sx={{
           position: 'relative',
           minHeight: '100vh',
