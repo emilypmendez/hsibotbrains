@@ -1,12 +1,14 @@
 # Pinnacle Plus is Now Live!
 
+Visit the website at [PinnaclePlus Demo](https://pinnacleplus.netlify.app/) to see the live version of the website.
+
 Around 30% of underrepresented communities, such as people of color, latinoX, LGBTQ+, and younger generations, leave their jobs due to a lack of health benefits.
 
 KPMG can offer Pinnacle Plus to employees and partners, which is the turnkey solution for 24 hour communication service with virtual access to healthcare providers, industry partners, and government assistance programs.
 
 KPMG will be able to outreach to other internal programs and companies in the application on behalf of the employee, since Pinnacle Plus offers a partnership portal. Individual companies who are already a partner will have their own login on the site in order to add more funds or send a request for future collaborations.
 
-# In the Zip file solution, you will find the following:
+# In the project submission, you will find the following:
 - Canva presentation that you can view to see the potetial we had in mind for the entirety of the website application
 - An executive summary of the entire project and program concept that we have created
 - A powerpoint presentation that you can view to see the potetial we had in mind for the entirety of the website
