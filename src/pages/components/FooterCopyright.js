@@ -11,17 +11,17 @@ export default function FooterCopyright() {
         {new Date().getFullYear()}{'.'}
         <br/>
         Pinnacle Plus is a unique product of {' '}
-        <Link color="inherit" href="https://kpmg.com/">
+        <Link color="inherit" href="https://kpmg.com/" target="_blank">
           KPMG
         </Link>{'. '}
         <br/><br/>
-        <Link color="inherit" href="https://kpmg.com/us/en/home/misc/legal.html">
+        <Link color="inherit" href="https://kpmg.com/us/en/home/misc/legal.html" target="_blank">
           TOS
         </Link>{' | '}
-        <Link color="inherit" href="https://kpmg.com/us/en/home/misc/privacy.html">
+        <Link color="inherit" href="https://kpmg.com/us/en/home/misc/privacy.html" target="_blank">
           Privacy Policy
         </Link>{' | '}
-        <Link color="inherit" href="https://kpmg.com/us/en/home/misc/accessibility.html">
+        <Link color="inherit" href="https://kpmg.com/us/en/home/misc/accessibility.html" target="_blank">
           Accessibility
         </Link>
         <br/><br/>
