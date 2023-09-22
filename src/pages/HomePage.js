@@ -44,16 +44,30 @@ const HomePage = () => {
           <Typography variant="h4" color="primary" gutterBottom>
             A premium health equity for all
           </Typography>
-          
+  
+      
           <Link
             component={RouterLink}
-            to="/"
+            to="/dashboard"
             underline="none"
           >
-            <Button variant="contained" size="large" >
-              Get Started
+            <Button variant="contained" size="small" >
+              DASHBOARD
             </Button>
           </Link>
+
+          <Link
+            component={RouterLink}
+            to="/events"
+            underline="none"
+          >
+            <Button variant="contained" size="small" >
+              EVENTS
+            </Button>
+          </Link>
+
+          
+
         </Container>
       </Box>
       {/* END OF HEADER */}

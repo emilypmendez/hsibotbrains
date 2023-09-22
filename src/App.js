@@ -5,9 +5,10 @@ import LoginPage from './pages/LoginPage';
 import DashboardPage from './pages/DashboardPage';
 import JobSearchPage from './pages/JobSearchPage';
 import JobDetailsPage from './pages/JobDetailsPage';
-import EmployerProfilePage from './pages/EmployerProfilePage';
-import PaymentPage from './pages/PaymentPage';
-
+import Events from './pages/Events';
+import ProgramPage from './pages/ProgramPage';
+import SponsorEvent from './pages/SponsorEvent';
+import OpenPartners from './pages/OpenPartners';
 
 function App() {
   return (
@@ -18,8 +19,10 @@ function App() {
           <Route path="dashboard" element={<DashboardPage />} />
           <Route path="search" element={<JobSearchPage />} />
         <Route path="jobs/:id" element={<JobDetailsPage />} />
-        <Route path="employers/:id" element={<EmployerProfilePage />} />
-        <Route path="payment" element={<PaymentPage />} />
+        <Route path="events/:id" element={<Events />} />
+        <Route path="program" element={<ProgramPage />} />
+        <Route path="sponsor" element={<SponsorEvent />} />
+        <Route path="join" element={<OpenPartners />} />
     </Routes>
     </BrowserRouter>
   );
