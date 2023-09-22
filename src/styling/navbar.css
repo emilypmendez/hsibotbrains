@@ -1,0 +1,90 @@
+/* navbar.css */
+
+/*
+BRAND COLORS:
+
+#007954 - Dark Green
+#00A86B - Green
+#EEFB41 - Yellow
+#F2F2F2 - Light Gray
+#282c34 - Dark Gray
+#000000 - Black
+#FEFFFE - White
+*/
+
+/* Basic Navbar Styles */
+.navbar {
+    background-color: transparent; /* Default background color */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+  }
+  
+  .navbar.active {
+    background-color: #white; /* Custom primary color for the active state */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Add shadow on scroll */
+  }
+  
+  /* Logo Styles */
+  .link {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .text {
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+  }
+  
+  .dot {
+    color: #fff; /* Match the primary color */
+  }
+  
+  /* Menu Styles */
+  .links {
+    display: flex;
+    align-items: center;
+  }
+  
+  .link {
+    margin: 0 20px;
+    color: white; /* Text color for links */
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .link:hover{
+    color: #EEFB41;
+  }
+  
+  /* User Avatar Styles */
+  .user {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: white;
+  }
+  
+  /* Add more styles for your menu items as needed */
+  .options {
+    position: absolute;
+    top: 50px; /* Adjust the vertical position */
+    right: 0;
+    background-color: #ffffff; /* Background color for the user menu */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Add shadow to the menu */
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  
+  /* Adjust the styling for other elements like menu items as needed */
+  
+  /* Media Query for Responsiveness */
+  @media (max-width: 768px) {
+    .links {
+      display: none; /* Hide links on smaller screens */
+    }
+  
+    /* Add styles for mobile navigation (e.g., hamburger menu) if needed */
+  }
