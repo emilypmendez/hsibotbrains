@@ -3,8 +3,6 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import HomePage from './pages/HomePage';
 import LoginPage from './pages/LoginPage';
 import DashboardPage from './pages/DashboardPage';
-import JobSearchPage from './pages/JobSearchPage';
-import JobDetailsPage from './pages/JobDetailsPage';
 import Events from './pages/Events';
 import ProgramPage from './pages/ProgramPage';
 import SponsorEvent from './pages/SponsorEvent';
@@ -17,8 +15,6 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="login" element={<LoginPage />} />
           <Route path="dashboard" element={<DashboardPage />} />
-          <Route path="search" element={<JobSearchPage />} />
-        <Route path="jobs/:id" element={<JobDetailsPage />} />
         <Route path="events/:id" element={<Events />} />
         <Route path="program" element={<ProgramPage />} />
         <Route path="sponsor" element={<SponsorEvent />} />

@@ -5,6 +5,7 @@ import Navbar from './components/Navbar';
 // import ProTip from './components/ProTip';
 // import ParallaxBackground from './components/ParallaxBackground';
 import FooterCopyright from './components/FooterCopyright';
+import PoweredByKPMG from './components/PoweredByKPMG';
 
 
 const HomePage = () => {
@@ -18,7 +19,7 @@ const HomePage = () => {
         bgcolor="transparent" // Set the background color here // #007954
         sx={{
           position: 'relative',
-          minHeight: '100vh',
+          minHeight: '125vh',
           display: 'flex',
           flexDirection: 'column',
           zIndex: 1,
@@ -42,31 +43,12 @@ const HomePage = () => {
             Welcome To Pinnacle Plus
           </Typography>
           <Typography variant="h4" color="primary" gutterBottom>
-            A premium health equity for all
+            A premium health equity resource for all
           </Typography>
-  
-      
-          <Link
-            component={RouterLink}
-            to="/dashboard"
-            underline="none"
-          >
-            <Button variant="contained" size="small" >
-              DASHBOARD
-            </Button>
-          </Link>
 
-          <Link
-            component={RouterLink}
-            to="/events"
-            underline="none"
-          >
-            <Button variant="contained" size="small" >
-              EVENTS
-            </Button>
-          </Link>
-
-          
+          {/* FOOTER CONTENT */}
+            <PoweredByKPMG />
+          {/* END OF FOOTER CONTENT */}
 
         </Container>
       </Box>
@@ -77,17 +59,19 @@ const HomePage = () => {
         bgcolor="#003087" // Set the background color here // #007954
         sx={{
           position: 'relative',
-          minHeight: '100vh',
+          minHeight: '75vh',
           display: 'flex',
           flexDirection: 'column',
           zIndex: 1,
         }}
         >
         <Container maxWidth="md">
-          <Typography variant="h5" align="center" color="WHITE" gutterBottom sx={{ marginTop: '4rem' }}>
-            LOVED BY ORGANIZATIONS & UNIVERSITIES NATIONWIDE
+          <Typography variant="h2" align="center" color="WHITE" gutterBottom sx={{ marginTop: '4rem', fontWeight:'bold' }}>
+            Partner Institutions
           </Typography>
-          City University of New York
+          <Typography variant="h5" align="center" color="WHITE" paragraph sx={{ marginTop: '1rem' }}>
+            Learn more about the program and its benefits to you.
+          </Typography>
         </Container>
        </Box>   
       {/* END OF */}
@@ -105,10 +89,10 @@ const HomePage = () => {
         >
         <Container maxWidth="md">
           <Typography variant="h2" align="center" color="text.primary" gutterBottom sx={{ marginTop: '4rem', fontWeight:'bold' }}>
-            How It Works
+            Get Started Today
           </Typography>
           <Typography variant="h5" align="center" color="#text.secondary" paragraph sx={{ marginTop: '1rem' }}>
-            We use the latest in AI technology to help you find the perfect job.
+            Sign up for a free account and start your journey to better health.
           </Typography>
         </Container>
        </Box> 

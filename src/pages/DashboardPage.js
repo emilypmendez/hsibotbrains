@@ -2,14 +2,15 @@ import React from 'react';
 import ChartService from '../services/ChartService';
 import '../styling/DashboardPage.css';
 import { Container, Box, Typography, Button, Link } from '@mui/material';
+import { AppBar, Toolbar, Grid, Paper } from '@mui/material';
+import pinnacleplus from '../pages/assets/pinnacleplus.svg';
 
 function DashboardPage() {
   // Implement dashboard logic using ChartService
 
   return (
     <div className="dashboard-page">
-      {
-      
+
       <Box
       bgcolor="transparent" // Set the background color here // #007954
       sx={{
@@ -38,7 +39,7 @@ function DashboardPage() {
           Welcome To Pinnacle Plus
         </Typography>
         <Typography variant="h4" color="primary" gutterBottom>
-          A premium health equity for all
+          A premium health equity resource for all
         </Typography>
 
 
@@ -46,9 +47,7 @@ function DashboardPage() {
     </Box>
     
      
-      /* Render charts
-    
-    */ }
+     { /* Render charts */}
     </div>
   );
 

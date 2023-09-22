@@ -6,14 +6,14 @@ export default function FooterCopyright() {
     return (
       <Typography variant="body2" color="text.secondary" align="center">
         <br/>
-        {'Copyright © Ecobuddy.io | '} 
+        {'Copyright © Pinnacle Plus | '} 
         {'All Rights Reserved. '}
         {new Date().getFullYear()}{'.'}
         <br/>
-        Ecobuddy.io is a product of {' '}
-        <Link color="inherit" href="https://boldmotivegroup.com/">
-          Bold Motive Group, LLC.
-        </Link>{' '}
+        Pinnacle Plus is a unique product of {' '}
+        <Link color="inherit" href="https://kpmg.com/">
+          KPMG
+        </Link>{'. '}
         <br/><br/>
       </Typography>
     );

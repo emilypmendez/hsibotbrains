@@ -2,7 +2,9 @@ import * as React from 'react';
 import { Link , useLocation, useNavigate } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { AppBar, Toolbar, Typography, Button, Container, IconButton, Menu, MenuItem, Avatar, TextField } from '@mui/material';
+import { Link as RouterLink } from 'react-router-dom';
 import SearchIcon from '@mui/icons-material/Search'; // Import the SearchIcon component
+import pinnacleplus from '../assets/pinnacleplus.svg';
 
 import '../../styling/navbar.css'
 
@@ -27,7 +29,7 @@ const Navbar = () => {
   const currentUser = {
     id: 1,
     username: 'EMILY',
-    isUser: true,
+    isUser: false,
   };
 
   const handleMenuOpen = (event) => {
@@ -63,26 +65,44 @@ const Navbar = () => {
         <Toolbar>
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
             <Link to="/" className="link">
-              <span className="text">EcoBuddy<span className="dot">.</span>io</span>
+              <span className="text">
+              <img src={pinnacleplus} alt="Pinnacle Plus Logo" width="250" height="100" />
+              </span>
             </Link>
           </Typography>
-          <div className="search">
-            <TextField
-              sx={{ backgroundColor: 'background.default', borderRadius: '5px', width: '300px' }}
-              variant="outlined"
-              size="small"
-              placeholder="Search"
-              InputProps={{
-                startAdornment: (
-                  <IconButton>
-                    <SearchIcon />
-                  </IconButton>
-                ),
-              }}
-            />
-          </div>
+
+          {/* Conditionally render the search bar when the user is logged in */}
+          {currentUser.isUser && (
+            <div className="search">
+              <TextField
+                sx={{ backgroundColor: 'background.default', borderRadius: '5px', width: '300px' }}
+                variant="outlined"
+                size="small"
+                placeholder="Search"
+                InputProps={{
+                  startAdornment: (
+                    <IconButton>
+                      <SearchIcon />
+                    </IconButton>
+                  ),
+                }}
+              />
+            </div>
+          )}
+
+          <Link
+            component={RouterLink}
+            to="/dashboard"
+            underline="none"
+          >
+            <Button variant="contained" size="xl" sx={{ backgroundColor:'white', color:'#000' }}>
+              Get Started
+            </Button>
+          </Link>
+
+          {/*
           <div className="links">
-            {/* Check if the user is logged in */}
+            {/* Check if the user is logged in */} {/*}
             {currentUser ? (
               <>
                 <IconButton onClick={handleMenuOpen}>
@@ -98,14 +118,14 @@ const Navbar = () => {
                   anchorOrigin={{ vertical: 'bottom', horizontal: 'right' }}
                   transformOrigin={{ vertical: 'top', horizontal: 'right' }}
                 >
-                  {/* Display user menu options */}
+                  {/* Display user menu options */} {/*}
                   {currentUser.isUser && (
                     <>
                       <MenuItem component={Link} to="/dashboard">
                         Dashboard
                       </MenuItem>
-                      <MenuItem component={Link} to="/jobs">
-                        Jobs
+                      <MenuItem component={Link} to="/events">
+                        Events
                       </MenuItem>
                     </>
                   )}
@@ -124,7 +144,7 @@ const Navbar = () => {
                 Login
               </Button>
             )}
-          </div>
+          </div> */}
         </Toolbar>
       </Container>
     </AppBar>

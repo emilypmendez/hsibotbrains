@@ -1,0 +1,19 @@
+/* Define a class for your large button */
+.large-button {
+    font-size: 24px; /* Adjust the font size to make the button large */
+    padding: 16px 32px; /* Add padding to give the button some space */
+    background-color: #007954; /* Background color for the button */
+    color: #fff; /* Text color for the button */
+    border: none; /* Remove border */
+    border-radius: 8px; /* Add rounded corners for a nicer look */
+    cursor: pointer; /* Add a pointer cursor for interaction */
+  }
+  
+  /* Optionally, you can style the button on hover or when it's active */
+  .large-button:hover {
+    background-color: #00A86B; /* Change the background color on hover */
+  }
+  
+  .large-button:active {
+    background-color: #003087; /* Change the background color when the button is clicked */
+  }

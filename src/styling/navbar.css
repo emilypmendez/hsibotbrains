@@ -3,19 +3,19 @@
 /*
 BRAND COLORS:
 
-#007954 - Dark Green
-#00A86B - Green
-#EEFB41 - Yellow
 #F2F2F2 - Light Gray
 #282c34 - Dark Gray
-#000000 - Black
 #FEFFFE - White
+#003087 - Dark Blue
+#000000 - Black
+
 */
 
 /* Basic Navbar Styles */
 .navbar {
-    background-color: transparent; /* Default background color */
+    background: linear-gradient(to right, #ffffff, #003087); /* Default background color */
     transition: background-color 0.3s ease; /* Smooth background color transition */
+    height: 50px;
   }
   
   .navbar.active {
@@ -54,7 +54,7 @@ BRAND COLORS:
   }
 
   .link:hover{
-    color: #EEFB41;
+    color: #282c34;
   }
   
   /* User Avatar Styles */

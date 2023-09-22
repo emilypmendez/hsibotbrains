@@ -2,14 +2,12 @@
 
 /*
 BRAND COLORS:
-
-#007954 - Dark Green
-#00A86B - Green
-#EEFB41 - Yellow
+----
 #F2F2F2 - Light Gray
 #282c34 - Dark Gray
-#000000 - Black
 #FEFFFE - White
+#003087 - Dark Blue
+#000000 - Black
 */
 
 import { createTheme } from '@mui/material/styles';
@@ -17,7 +15,7 @@ import { createTheme } from '@mui/material/styles';
 const theme = createTheme({
   palette: {
     primary: {
-      main: '#007954', // Change to brand primary color
+      main: '#003087', // Change to brand primary color
     },
     background: {
       default: '#fff', // Set the default background color to white
@@ -28,7 +26,7 @@ const theme = createTheme({
     link: {
       color: '#fff', // white // Change to brand link color
       '&:hover': {
-        color: '#EEFB41', // yellow // Change to brand hover color
+        color: '#F2F2F2', // yellow // Change to brand hover color
         bold: 'true',
       },
     },
@@ -38,10 +36,10 @@ const theme = createTheme({
       fontWeight: 'bold', 
       textDecoration: 'none', 
       color: '#fff', // white // 
-      backgroundColor: '#007954', // green
+      backgroundColor: '#003087', // dark blue
       '&:hover': {
-        color: '#EEFB41', // yellow // 
-        backgroundColor: '#00A86B', // green
+        color: '#282c34', // dark grey // 
+        backgroundColor: '#003087', // dark blue
         fontWeight: 'bold',
       },
     },

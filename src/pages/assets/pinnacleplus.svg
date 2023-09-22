@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Second_Type" data-name="Second Type" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1182.11 490.34">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #231f20;
+      }
+
+      .cls-1, .cls-2 {
+        font-family: Helvetica-Bold, Helvetica;
+        font-size: 200.02px;
+        font-weight: 700;
+      }
+
+      .cls-2 {
+        stroke-width: 5px;
+      }
+
+      .cls-2, .cls-3, .cls-4 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2, .cls-4 {
+        fill: none;
+        stroke: #231f20;
+      }
+
+      .cls-3 {
+        fill: #ed1c24;
+        stroke: #ed1c24;
+      }
+
+      .cls-4 {
+        stroke-width: 11px;
+      }
+    </style>
+  </defs>
+  <g id="Layer_8" data-name="Layer 8">
+    <rect class="cls-3" x="1095.91" y="252.99" width="36.52" height="128.14"/>
+    <rect class="cls-3" x="1099.28" y="253.2" width="36.52" height="128.14" transform="translate(1434.81 -800.28) rotate(90)"/>
+    <path class="cls-4" d="m158.57,238.4c53.85-60.5,107.7-120.99,161.54-181.49,68.26,57.17,136.53,114.34,204.79,171.51"/>
+    <path class="cls-4" d="m422.75,138.13c32.94-43.42,65.88-86.84,98.83-130.26,88.58,72.55,177.16,145.11,265.74,217.66"/>
+  </g>
+  <g id="Layer_9" data-name="Layer 9">
+    <text class="cls-2" transform="translate(2.5 391.64)"><tspan x="0" y="0">PINNACLE</tspan></text>
+    <text class="cls-1" transform="translate(7.09 391.64)"><tspan x="0" y="0">PINNACLE</tspan></text>
+  </g>
+</svg>
