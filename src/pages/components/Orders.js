@@ -15,36 +15,43 @@ function createData(id, date, name, shipTo, paymentMethod, amount) {
 const rows = [
   createData(
     0,
-    '16 Mar, 2019',
-    'Elvis Presley',
+    '24, Sep 2023',
+    'IBM',
     'Tupelo, MS',
-    'VISA ⠀•••• 3719',
-    312.44,
+    'Pregnancy',
+    3102.44,
   ),
   createData(
     1,
-    '16 Mar, 2019',
-    'Paul McCartney',
+    '24, Sep 2023',
+    'Microsoft',
     'London, UK',
-    'VISA ⠀•••• 2574',
-    866.99,
+    'Stroke',
+    8660.99,
   ),
-  createData(2, '16 Mar, 2019', 'Tom Scholz', 'Boston, MA', 'MC ⠀•••• 1253', 100.81),
+  createData(
+    2, 
+    '24, Sep 2023', 
+    'Red Hat', 
+    'Boston, MA', 
+    'Asthma', 
+    1000.81
+  ),
   createData(
     3,
-    '16 Mar, 2019',
-    'Michael Jackson',
+    '24, Sep 2023',
+    'Oracle',
     'Gary, IN',
-    'AMEX ⠀•••• 2000',
-    654.39,
+    'Heart disease',
+    6054.39,
   ),
   createData(
     4,
-    '15 Mar, 2019',
-    'Bruce Springsteen',
+    '24, Sep 2023',
+    'Salesforce',
     'Long Branch, NJ',
-    'VISA ⠀•••• 5919',
-    212.79,
+    'Leukemia',
+    2120.79,
   ),
 ];
 
@@ -59,11 +66,11 @@ export default function Orders() {
       <Table size="small">
         <TableHead>
           <TableRow>
-            <TableCell>Date</TableCell>
-            <TableCell>Name</TableCell>
-            <TableCell>Ship To</TableCell>
-            <TableCell>Payment Method</TableCell>
-            <TableCell align="right">Sale Amount</TableCell>
+            <TableCell><strong>Date</strong></TableCell>
+            <TableCell><strong>Partner</strong></TableCell>
+            <TableCell><strong>Ship To</strong></TableCell>
+            <TableCell><strong>Reason for Funding</strong></TableCell>
+            <TableCell align="right"><strong>Sale Amount</strong></TableCell>
           </TableRow>
         </TableHead>
         <TableBody>

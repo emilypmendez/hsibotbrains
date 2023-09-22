@@ -1,7 +1,7 @@
 import React from 'react';
 import ChartService from '../services/ChartService';
 import '../styling/DashboardPage.css';
-import { Container, Box, Typography, Button, Link } from '@mui/material';
+import { Container, Box, Typography, Button, Link, TextField } from '@mui/material';
 import { AppBar, Toolbar, Grid, Paper } from '@mui/material';
 import pinnacleplus from '../pages/assets/pinnacleplus.svg';
 import FooterCopyright from './components/FooterCopyright';
@@ -22,6 +22,9 @@ import Badge from '@mui/material/Badge';
 import MenuIcon from '@mui/icons-material/Menu';
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import NotificationsIcon from '@mui/icons-material/Notifications';
+import EmailIcon from '@mui/icons-material/Email';
+import AccountCircleIcon from '@mui/icons-material/AccountCircle';
+import SearchIcon from '@mui/icons-material/Search';
 
 
 function DashboardPage() {
@@ -111,9 +114,36 @@ function DashboardPage() {
             >
               Dashboard
             </Typography>
+
+            {/* Add the search bar here */}
+            <TextField
+              sx={{ backgroundColor: 'background.default', borderRadius: '5px', width: '300px' }}
+              variant="outlined"
+              size="small"
+              placeholder="Search"
+              InputProps={{
+                startAdornment: (
+                  <IconButton>
+                    <SearchIcon />
+                  </IconButton>
+                ),
+              }}
+            />
+            {/* End of search bar */}
+
             <IconButton color="inherit">
               <Badge badgeContent={4} color="secondary">
                 <NotificationsIcon />
+              </Badge>
+            </IconButton>
+            <IconButton color="inherit">
+              <Badge badgeContent={6} color="secondary">
+                <EmailIcon />
+              </Badge>
+            </IconButton>
+            <IconButton color="inherit">
+              <Badge badgeContent={0} color="secondary">
+                <AccountCircleIcon />
               </Badge>
             </IconButton>
           </Toolbar>
@@ -127,6 +157,7 @@ function DashboardPage() {
               px: [1],
             }}
           >
+            <img src={pinnacleplus} alt="Pinnacle Plus Logo" width="150" height="100" />
             <IconButton onClick={toggleDrawer}>
               <ChevronLeftIcon />
             </IconButton>
